@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:spacing="16dp">
+
+        <Button
+            android:id="@+id/dateFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Filter by Date" />
+
+        <!-- Calories Section -->
+        <TextView
+            android:id="@+id/caloriesSectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/caloriesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 kcal / 0 kcal"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="8dp" />
+
+        <ProgressBar
+            android:id="@+id/caloriesProgressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Protein Section -->
+        <TextView
+            android:id="@+id/proteinSectionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Protein"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/proteinText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 g / 0 g"
+            android:textSize="16sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_marginBottom="8dp" />
+
+        <ProgressBar
+            android:id="@+id/proteinProgressBar"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Food List Section -->
+        <TextView
+            android:id="@+id/foodList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="No foods logged for this day."
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
